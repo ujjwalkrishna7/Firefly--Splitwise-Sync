@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  python-sync-script:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /app/your_script_name.py
+    networks:
+      - fireflyiii_firefly_iii
+
+networks:
+  fireflyiii_firefly_iii:
+    driver: bridge

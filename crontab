@@ -1,0 +1,2 @@
+# Run the script every 2 minutes and redirect its output to stdout
+*/2 * * * * python /app/your_script_name.py >> /proc/1/fd/1 2>> /proc/1/fd/2
